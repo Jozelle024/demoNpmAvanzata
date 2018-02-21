@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Zhel024/demoNpmAvanzata/issues"
   },
-  "homepage": "https://github.com/Zhel024/demoNpmAvanzata#readme"
+  "homepage": "https://github.com/Zhel024/demoNpmAvanzata#readme",
+  "dependencies": {
+    "moment": "2.20.1"
+  }
 }
