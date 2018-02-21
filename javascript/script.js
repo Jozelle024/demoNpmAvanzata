@@ -44,7 +44,7 @@ function caricaData() {
     btn.addEventListener('click', function () {
 
         for (var i = 0; i < 50; i++) {
-            addTagh();
+            addTagh(i);
         }
     });
 
@@ -57,10 +57,10 @@ function addP(id, content) {
     h1.appendChild(p);
 }
 
-function addTagh() {
+function addTagh(num) {
     var h1 = document.createElement('h1');
     var contenitore = document.getElementById('sezione2');
-    h1.innerText = 'ciao';
+    h1.innerText = num;
     h1.style.backgroundColor = 'pink';
     contenitore.append(h1);
 
