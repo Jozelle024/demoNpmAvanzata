@@ -5,7 +5,7 @@ var gutil = require('gulp-util');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var jshint = require('gulp-shint');
+var jshint = require('gulp-jshint');
 
 
 gulp.task('default', function(){ //task creation, (name of task, function)

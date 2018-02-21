@@ -12,7 +12,7 @@ function caricaData() {
 
         var dataestesa = data.format('h:mm:ss'); //.format change the format in the following ()
         var dataintera = data.format('LLL');
-        var datasettimana = data.format('LLLL')
+        var datasettimana = data.format('LLLL');
         var datascadenza = scadenza.format('LLLL');
 
         /*
@@ -38,7 +38,7 @@ function caricaData() {
         addP('sezione', datasettimana);
         addP('sezione', datascadenza);
 
-    }, 1000)
+    }, 1000);
 
     var btn = document.getElementById('btnShow');
     btn.addEventListener('click', function () {
