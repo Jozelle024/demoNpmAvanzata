@@ -1,10 +1,11 @@
 // consent the prog to make tasks
-
+// jshint ignore: start
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var jshint = require('gulp-shint');
 
 
 gulp.task('default', function(){ //task creation, (name of task, function)
@@ -26,4 +27,12 @@ gulp.task('build-js', function(){
          .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/'));
-})
+});
+
+// configure the jshint task
+gulp.task('jshint', function(){
+    return gulp.src('source/javascript/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('jshint-stylish'));
+});
+
