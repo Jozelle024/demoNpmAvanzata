@@ -29,7 +29,7 @@ gulp.task('build-js', function(){
         .pipe(gulp.dest('dist/'));
 });
 
-// configure the jshint task
+// configure the jshint task, checks javascript code
 gulp.task('jshint', function(){
     return gulp.src('source/javascript/*.js')
         .pipe(jshint())
