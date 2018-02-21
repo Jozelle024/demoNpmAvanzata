@@ -15,6 +15,7 @@ function caricaData(){
         var datasettimana = data.format('LLLL')
         var datascadenza = scadenza.format('LLLL');
 
+        /*
         var p = document.createElement('p');
         var p1 = document.createElement('p');
         var p3 = document.createElement('p');
@@ -31,7 +32,19 @@ function caricaData(){
         h1.appendChild(p1);
         h1.appendChild(p3);
         h1.appendChild(p4);
+        */
+       addP('sezione', dataestesa);
+       addP('sezione', dataintera);
+       addP('sezione', datasettimana);
+       addP('sezione', datascadenza);
 
     }, 1000) 
 
 };
+
+function addP(id, content) {
+    var p = document.createElement('p');
+    var h1 = document.getElementById(id);
+    p.innerText = content;
+    h1.appendChild(p);
+}
