@@ -23,11 +23,14 @@
   "homepage": "https://github.com/Zhel024/demoNpmAvanzata#readme",
   "dependencies": {
     "bootstrap": "3.3.7",
+    "gulp-sourcemaps": "^2.6.4",
     "jquery": "3.3.1",
     "moment": "2.20.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "logmon": "0.0.1"
   }
