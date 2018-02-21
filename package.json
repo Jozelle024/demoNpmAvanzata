@@ -27,6 +27,8 @@
     "moment": "2.20.1"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
     "logmon": "0.0.1"
   }
 }
