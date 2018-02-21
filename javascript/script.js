@@ -1,9 +1,9 @@
-function caricaData(){
+function caricaData() {
 
-    setTimeout(function(){
+    setTimeout(function () {
 
         moment.locale('it');
-        
+
         var sunrise = 1485762037; // hour of sunrise in json openweathermap
         var oggi = moment(); // date of today 
         var scadenza = oggi.add(30, 'days');
@@ -33,12 +33,20 @@ function caricaData(){
         h1.appendChild(p3);
         h1.appendChild(p4);
         */
-       addP('sezione', dataestesa);
-       addP('sezione', dataintera);
-       addP('sezione', datasettimana);
-       addP('sezione', datascadenza);
+        addP('sezione', dataestesa);
+        addP('sezione', dataintera);
+        addP('sezione', datasettimana);
+        addP('sezione', datascadenza);
 
-    }, 1000) 
+    }, 1000)
+
+    var btn = document.getElementById('btnShow');
+    btn.addEventListener('click', function () {
+
+        for (var i = 0; i < 50; i++) {
+            addTagh();
+        }
+    });
 
 };
 
@@ -47,4 +55,13 @@ function addP(id, content) {
     var h1 = document.getElementById(id);
     p.innerText = content;
     h1.appendChild(p);
+}
+
+function addTagh() {
+    var h1 = document.createElement('h1');
+    var contenitore = document.getElementById('sezione2');
+    h1.innerText = 'ciao';
+    h1.style.backgroundColor = 'pink';
+    contenitore.append(h1);
+
 }
